@@ -1,0 +1,21 @@
+[00] : IP = 32
+[04] : LV = 1
+[08] : AX = 1
+[12] : AY = 1
+[16] : AZ = 0
+[20] : CNT = 0
+[24] : IT = 2
+[28] : IN = 0
+INP IN
+MV CNT IN
+JUMP 52
+OUT AX
+STOP
+IFLESSEQ IT CNT
+CJUMP 64
+JUMP 44
+INC IT
+MV AZ AX
+ADD AX AY
+MV AY AZ
+JUMP 52
