@@ -4,18 +4,47 @@
 [12] : AY = 1
 [16] : AZ = 0
 [20] : CNT = 0
-[24] : IT = 2
+[24] : IT = 3
 [28] : IN = 0
+PRINT 'V'
+PRINT 'v'
+PRINT 'e'
+PRINT 'd'
+PRINT 'i'
+PRINT 't'
+PRINT 'e'
+PRINT ' '
+PRINT 'n'
+PRINT ' '
 INP IN
 MV CNT IN
-JUMP 52
+JUMP 168
+PRINT 'C'
+PRINT 'h'
+PRINT 'i'
+PRINT 's'
+PRINT 'l'
+PRINT 'o'
+PRINT ' '
+PRINT 'f'
+PRINT 'i'
+PRINT 'b'
+PRINT 'o'
+PRINT 'n'
+PRINT 'a'
+PRINT 'c'
+PRINT 'h'
+PRINT 'i'
+PRINT ' '
+PRINT '='
+PRINT ' '
 OUT AX
 STOP
 IFLESSEQ IT CNT
-CJUMP 64
-JUMP 44
+CJUMP 180
+JUMP 84
 INC IT
 MV AZ AX
 ADD AX AY
 MV AY AZ
-JUMP 52
+JUMP 84
